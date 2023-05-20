@@ -31,18 +31,18 @@ RUN apt-get update -y &&\
 # (instalacióin a nivel de sistema SIN gestor de paquetes)
 # +--------------------+
 
-#RUN wget https://ftp.gnu.org/gnu/bash/bash-4.3.tar.gz && \
-#    tar zxvf bash-4.3.tar.gz && \
-#    cd bash-4.3 && \
-#    ./configure && \
-#    make && \
-#    make install
+RUN wget https://ftp.gnu.org/gnu/bash/bash-4.3.tar.gz && \
+    tar zxvf bash-4.3.tar.gz && \
+    cd bash-4.3 && \
+    ./configure && \
+    make && \
+    make install
 
 # +------------------------------------------------------------------------+
 # INSTALACIÓN A NIVEL DE APLICACIÓN MEDIANTE GESTOR DE PAQUETES (regex DoS)
 # +------------------------------------------------------------------------+
 
-#COPY lang_dependencies/Pipfile.lock /app/Pipfile.lock
+COPY lang_dependencies/Pipfile.lock /app/Pipfile.lock
 
 #RUN pip3 install httplib2==0.18.1
 # Comentario para borrar, sólo para hacer el push 
