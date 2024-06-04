@@ -24,7 +24,6 @@ RUN apt-get update -y &&\
 
 #RUN wget http://snapshot.debian.org/archive/debian/20130319T033933Z/pool/main/o/openssl/openssl_1.0.1e-2_amd64.deb -O /tmp/openssl_1.0.1e-2_amd64.deb &&\
 #    dpkg --ignore-depends=multiarch-support -i /tmp/openssl_1.0.1e-2_amd64.deb
-# blablabla
 
 
 # +--------------------+
